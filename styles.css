@@ -67,20 +67,9 @@ ul {
 a {
     color: #333;
     text-decoration: none;
-}
-
-a:before {
-    content: '< ';
     transition: all 0.3s;
-    opacity: 0;
 }
 
-a:after {
-    content: ' >';
-    transition: all 0.3s;
-    opacity: 0;
-}
-
-a:hover:before, a:hover:after {
-    opacity: 1;
+a:hover {
+    color: #888;
 }
