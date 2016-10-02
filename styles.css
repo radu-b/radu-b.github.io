@@ -1,0 +1,86 @@
+
+@font-face {
+  font-family: 'Unna';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Unna-Regular'), 
+        url('data:application/x-font-woff;base64,d09GMgABAAAAAARMAA8AAAAAB0QAAAP2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGh4bDBwMBmAAbBEICoZQhUgLFgABNgIkAygEIAWCBgcgDAcboAUAxKLfsq+GtQwhurtJiIgb3DncPXP/Mlcmrsmr8wmk2FS/e+Fp2bSb0Hw2wIimCiHb29g25QGBp64KbA4gAI7hgB0c6KYcFodBsVGBd3F0GnSFEaBOKgBQtl/xQyThbx6c2chbAA4GGYh3sUXIUg1jpSMoQMCH4Hv//wXge0kE8ky9HV3PtQEAUHjreMKKFKHZgI713eACHhwCUIQmDGEEM5jDqq5bg3KnwbH6R/pj+u36lfoV+oX6BfpZ3iqSaALpOpwbnCth7flOAIUD1P4lZ7ABM4Cpnn5pZyyKBTIb82EukQGiI5VqxCvnsBISNcivlmivQR7jZEHQ3iCFdUHQSHmdMVW8hJgMyEI5GKVaRjCVpZBgBa+vXG47W/PAFATtDeVlxtR25Q2BlEeYCvl8+TqmKm9orwGykA52rrf/q0xtlx+OtTipr/ankMC9IWgHmPr0DdI5TAUzKp0Aumv1uvpquyJoz/nySkza4CRIpHh4zNDr77wqv9a7KUxglHouGRX7l7DMwNedBdyaAqiLIuUOpr4qJLszkOTb84HimDgwxh9JpGSYfF3d7L+aT1gC/Ww3n5paVfF1xVBH0RWFUZzoVFZQU553fGuMPq9Z20sryM3OEnDDj+WB1QOVZVHf2a3k+67voLv9F5uVKNHvo/nhqpbkoqq5pNb+er/vXmq0NftNxP3eG5dcKJ/MyXOENFG/V3kiK/b62OoYy5mel9liuuoSr2ktrvzdXSyUTvHxsEc09B3qWgnLCojLrc/LGqhPQ8YTiV7HDoW099183yPB7q2fVIg+RYF3WTs+jLp2ITOy8cOQ+oXcPgS9+N7DcTef2WwVX/I641Z3sVA6zcNitzgwz5q2sfapI4lRw09HNK8l1bdH3b6Id++XCp9wOeR6Z6HX0dvcxUR8/qRwdK3rE4XSyTprWm1tylZeUfVvvi70pPTSEy6flG9E55SNt13tLr6EdC1ROupSshGaVzXSfpXN8SPpjM2nt3RKb2XEwGpxVmXLp9Z/Gqyg1k/1t1zk3O+c85tF4L9U+Z4+8PbcPk0//v8v/DG+FyhLtUGWSFU2v6If16f4Y/XiZngXH/EuwOUiiStFEj0Bb/oRNvoRwdARzIkI5hxhPS2i92BGEQwx4FMFbBTHeczoqm3ScN7oLDDv5uCEMFh4JMBuMcATZRYjJPRVm3TLOiEFG2jFHOYwiCaMYhyrmIHgEuoxC/tNYgirWEYsWrCJBYwiCwFWYEtOQgISkSivFesrvA2jWMIyeucxZ0PE4fkJSMYEVrCCBWQhHvFYxjCWMIkFrGAZcdf4GcRhHksYRzzqUYaaEw6YjfS7kQQSeR/ph28znAQAAAA=') format('woff2');        
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+    font-family: Georgia;
+}
+
+
+body {
+    display: table;
+    background-color: #fff;
+    color: #333;
+}
+
+main {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 5rem;
+    font-weight: normal;
+    font-family: 'Unna';
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    max-width: 430px;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-style: italic;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:before {
+    content: '< ';
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+a:after {
+    content: ' >';
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+a:hover:before, a:hover:after {
+    opacity: 1;
+}
