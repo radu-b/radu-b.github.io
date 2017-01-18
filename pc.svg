@@ -14,8 +14,8 @@
 <rect x="105.167" y="170.5" fill="none" stroke="#00B500" width="59" height="3"/>
 <rect x="158.167" y="175.5" fill="none" stroke="#00B500" width="6" height="2"/>
 <rect x="3.167" y="192.5" fill="none" stroke="#00B500" width="173" height="8"/>
-<circle fill="none" stroke="#00B500" stroke-width="0.5" cx="8.333" cy="171.5" r="3"/>
-<circle fill="none" stroke="#00B500" stroke-width="0.5" cx="16.333" cy="171.5" r="3"/>
+<circle fill="none" stroke="#00B500" cx="8.333" cy="171.5" r="3"/>
+<circle fill="none" stroke="#00B500" cx="16.333" cy="171.5" r="3"/>
 <path fill="none" stroke="#00B500" d="M94.333,17.5c-21.459,14.789-59.166,76.25-60.666,101"/>
 <path fill="none" stroke="#00B500" d="M126.917,118.5c11.375-6.75,27.5-27.75,31.25-45.301"/>
 </svg>
