@@ -1,91 +1,106 @@
-
 @font-face {
-  font-family: 'Unna';
+  font-family: "Unna";
   font-style: normal;
   font-weight: 400;
-  src: local('Unna-Regular'), 
-        url('data:application/x-font-woff;base64,d09GMgABAAAAAARMAA8AAAAAB0QAAAP2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGh4bDBwMBmAAbBEICoZQhUgLFgABNgIkAygEIAWCBgcgDAcboAUAxKLfsq+GtQwhurtJiIgb3DncPXP/Mlcmrsmr8wmk2FS/e+Fp2bSb0Hw2wIimCiHb29g25QGBp64KbA4gAI7hgB0c6KYcFodBsVGBd3F0GnSFEaBOKgBQtl/xQyThbx6c2chbAA4GGYh3sUXIUg1jpSMoQMCH4Hv//wXge0kE8ky9HV3PtQEAUHjreMKKFKHZgI713eACHhwCUIQmDGEEM5jDqq5bg3KnwbH6R/pj+u36lfoV+oX6BfpZ3iqSaALpOpwbnCth7flOAIUD1P4lZ7ABM4Cpnn5pZyyKBTIb82EukQGiI5VqxCvnsBISNcivlmivQR7jZEHQ3iCFdUHQSHmdMVW8hJgMyEI5GKVaRjCVpZBgBa+vXG47W/PAFATtDeVlxtR25Q2BlEeYCvl8+TqmKm9orwGykA52rrf/q0xtlx+OtTipr/ankMC9IWgHmPr0DdI5TAUzKp0Aumv1uvpquyJoz/nySkza4CRIpHh4zNDr77wqv9a7KUxglHouGRX7l7DMwNedBdyaAqiLIuUOpr4qJLszkOTb84HimDgwxh9JpGSYfF3d7L+aT1gC/Ww3n5paVfF1xVBH0RWFUZzoVFZQU553fGuMPq9Z20sryM3OEnDDj+WB1QOVZVHf2a3k+67voLv9F5uVKNHvo/nhqpbkoqq5pNb+er/vXmq0NftNxP3eG5dcKJ/MyXOENFG/V3kiK/b62OoYy5mel9liuuoSr2ktrvzdXSyUTvHxsEc09B3qWgnLCojLrc/LGqhPQ8YTiV7HDoW099183yPB7q2fVIg+RYF3WTs+jLp2ITOy8cOQ+oXcPgS9+N7DcTef2WwVX/I641Z3sVA6zcNitzgwz5q2sfapI4lRw09HNK8l1bdH3b6Id++XCp9wOeR6Z6HX0dvcxUR8/qRwdK3rE4XSyTprWm1tylZeUfVvvi70pPTSEy6flG9E55SNt13tLr6EdC1ROupSshGaVzXSfpXN8SPpjM2nt3RKb2XEwGpxVmXLp9Z/Gqyg1k/1t1zk3O+c85tF4L9U+Z4+8PbcPk0//v8v/DG+FyhLtUGWSFU2v6If16f4Y/XiZngXH/EuwOUiiStFEj0Bb/oRNvoRwdARzIkI5hxhPS2i92BGEQwx4FMFbBTHeczoqm3ScN7oLDDv5uCEMFh4JMBuMcATZRYjJPRVm3TLOiEFG2jFHOYwiCaMYhyrmIHgEuoxC/tNYgirWEYsWrCJBYwiCwFWYEtOQgISkSivFesrvA2jWMIyeucxZ0PE4fkJSMYEVrCCBWQhHvFYxjCWMIkFrGAZcdf4GcRhHksYRzzqUYaaEw6YjfS7kQQSeR/ph28znAQAAAA=') format('woff2');        
+  src: local("Unna-Regular"),
+    url("data:application/x-font-woff;base64,d09GMgABAAAAAARMAA8AAAAAB0QAAAP2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGh4bDBwMBmAAbBEICoZQhUgLFgABNgIkAygEIAWCBgcgDAcboAUAxKLfsq+GtQwhurtJiIgb3DncPXP/Mlcmrsmr8wmk2FS/e+Fp2bSb0Hw2wIimCiHb29g25QGBp64KbA4gAI7hgB0c6KYcFodBsVGBd3F0GnSFEaBOKgBQtl/xQyThbx6c2chbAA4GGYh3sUXIUg1jpSMoQMCH4Hv//wXge0kE8ky9HV3PtQEAUHjreMKKFKHZgI713eACHhwCUIQmDGEEM5jDqq5bg3KnwbH6R/pj+u36lfoV+oX6BfpZ3iqSaALpOpwbnCth7flOAIUD1P4lZ7ABM4Cpnn5pZyyKBTIb82EukQGiI5VqxCvnsBISNcivlmivQR7jZEHQ3iCFdUHQSHmdMVW8hJgMyEI5GKVaRjCVpZBgBa+vXG47W/PAFATtDeVlxtR25Q2BlEeYCvl8+TqmKm9orwGykA52rrf/q0xtlx+OtTipr/ankMC9IWgHmPr0DdI5TAUzKp0Aumv1uvpquyJoz/nySkza4CRIpHh4zNDr77wqv9a7KUxglHouGRX7l7DMwNedBdyaAqiLIuUOpr4qJLszkOTb84HimDgwxh9JpGSYfF3d7L+aT1gC/Ww3n5paVfF1xVBH0RWFUZzoVFZQU553fGuMPq9Z20sryM3OEnDDj+WB1QOVZVHf2a3k+67voLv9F5uVKNHvo/nhqpbkoqq5pNb+er/vXmq0NftNxP3eG5dcKJ/MyXOENFG/V3kiK/b62OoYy5mel9liuuoSr2ktrvzdXSyUTvHxsEc09B3qWgnLCojLrc/LGqhPQ8YTiV7HDoW099183yPB7q2fVIg+RYF3WTs+jLp2ITOy8cOQ+oXcPgS9+N7DcTef2WwVX/I641Z3sVA6zcNitzgwz5q2sfapI4lRw09HNK8l1bdH3b6Id++XCp9wOeR6Z6HX0dvcxUR8/qRwdK3rE4XSyTprWm1tylZeUfVvvi70pPTSEy6flG9E55SNt13tLr6EdC1ROupSshGaVzXSfpXN8SPpjM2nt3RKb2XEwGpxVmXLp9Z/Gqyg1k/1t1zk3O+c85tF4L9U+Z4+8PbcPk0//v8v/DG+FyhLtUGWSFU2v6If16f4Y/XiZngXH/EuwOUiiStFEj0Bb/oRNvoRwdARzIkI5hxhPS2i92BGEQwx4FMFbBTHeczoqm3ScN7oLDDv5uCEMFh4JMBuMcATZRYjJPRVm3TLOiEFG2jFHOYwiCaMYhyrmIHgEuoxC/tNYgirWEYsWrCJBYwiCwFWYEtOQgISkSivFesrvA2jWMIyeucxZ0PE4fkJSMYEVrCCBWQhHvFYxjCWMIkFrGAZcdf4GcRhHksYRzzqUYaaEw6YjfS7kQQSeR/ph28znAQAAAA=")
+      format("woff2");
 }
 
-html, body {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    font-size: 16px;
-    font-family: Consolas, Monaco, monospace;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  font-family: Consolas, Monaco, monospace;
 }
-
 
 body {
-    display: table;
-    background-color: #fff;
-    color: #333;
+  display: table;
+  background-color: #fff;
+  color: #333;
 }
 
 main {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 16px;
 }
 
 main img {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 h1 {
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-size: 80px;
-    font-weight: normal;
-    font-family: 'Unna';
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 80px;
+  font-weight: normal;
+  font-family: "Unna";
 }
 
 h2 {
-    margin-top: 0;
-    font-size: 20px;
-    margin-bottom: 24px;
-    font-weight: normal;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: #00B500;
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #00b500;
 }
 
 hr {
-    border: none;
-    height: 1px;
-    background-color: #333;
-    max-width: 430px;
-    margin-top: 0;
-    margin-bottom: 24px;
+  border: none;
+  height: 1px;
+  background-color: #333;
+  max-width: 430px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 32px;
 }
 
 ul li {
-    display: inline;
-    margin: 0 10px 0 10px;
+  display: inline;
+  margin: 0 10px 0 10px;
 }
 
 a {
-    color: #333;
-    text-decoration: none;
-    transition: all 0.1s;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.1s;
 }
 
 a:hover {
-    color: #00B500;
+  color: #00b500;
 }
 
 @media (max-width: 400px) {
   h1 {
-      font-size: 50px;
+    font-size: 50px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #ccc;
+  }
+
+  hr {
+    color: #ccc;
+  }
+
+  a {
+    color: #ccc;
   }
 }
