@@ -2,6 +2,11 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="179px" height="212px" viewBox="0 0 179 212" enable-background="new 0 0 179 212" xml:space="preserve">
+<defs>
+	<clipPath id="screenClip">
+		<rect x="21.167" y="17.5" width="137" height="101" rx="4" ry="4" />
+	</clipPath>
+</defs>
 <path fill="none" stroke="#00B500" d="M171.167,126.831c0,3.131-2.538,5.669-5.67,5.669H13.836
 	c-3.131,0-5.67-2.538-5.67-5.669V9.169c0-3.131,2.539-5.669,5.67-5.669h151.66c3.132,0,5.67,2.538,5.67,5.669V126.831z"/>
 <path fill="none" stroke="#00B500" d="M158.167,112.831c0,3.131-2.538,5.669-5.67,5.669H26.836
@@ -15,7 +20,13 @@
 <rect x="158.167" y="175.5" fill="none" stroke="#00B500" width="6" height="2"/>
 <rect x="3.167" y="192.5" fill="none" stroke="#00B500" width="173" height="8"/>
 <circle fill="none" stroke="#00B500" cx="8.333" cy="171.5" r="3"/>
+<circle fill="#00B500" stroke="none" cx="8.333" cy="171.5" r="3" opacity="0">
+	<animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;0.02381;0.04762;0.11905;0.14286;0.16667;0.23810;0.26190;0.28571;0.35714;0.42857;0.50000;0.52381;0.54762;0.57143;0.59524;0.66667;0.69048;0.71429;0.73810;0.76190;0.83333;1" dur="7.6s" repeatCount="indefinite" calcMode="discrete" />
+</circle>
 <circle fill="none" stroke="#00B500" cx="16.333" cy="171.5" r="3"/>
 <path fill="none" stroke="#00B500" d="M94.333,17.5c-21.459,14.789-59.166,76.25-60.666,101"/>
 <path fill="none" stroke="#00B500" d="M126.917,118.5c11.375-6.75,27.5-27.75,31.25-45.301"/>
+<rect x="21.167" y="-10.5" width="137" height="24" fill="#00B500" opacity="0.12" clip-path="url(#screenClip)">
+	<animate attributeName="y" values="-10.5;118.5;118.5" keyTimes="0;0.5;1" dur="9.25s" repeatCount="indefinite" />
+</rect>
 </svg>
